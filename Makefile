@@ -12,6 +12,14 @@ all: redis
 redis:
 	$(BUILD_SCRIPTS_PATH)/build_redis.sh
 
+.PHONY: clean
+clean:
+	$(BUILD_SCRIPTS_PATH)/delete_local_images.sh
+
+.PHONY: push
+push:
+	$(BUILD_SCRIPTS_PATH)/push_images.sh
+
 .PHONY: deploy
 deploy:
 ifeq (,$(shell docker network ls -f name=app -q))

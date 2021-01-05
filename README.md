@@ -8,7 +8,6 @@ It is inspired by the [bitnami-docker-redis-cluster](https://github.com/bitnami/
 ## Directory
 
 - `build_scripts/`: scripts for building
-- `test_scripts/`: scripts for running example
 
 ## Change as you need
 
