@@ -48,5 +48,11 @@ Or you can check `./Makefile` for more details.
 ### Run command
 
 ```bash
-make run
+make deploy
+```
+
+to undeploy
+
+```bash
+make undeploy
 ```
